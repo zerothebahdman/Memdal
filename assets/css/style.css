@@ -1,0 +1,317 @@
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.fill-screen {
+    background-position: center;
+    background-size: cover;
+}
+
+.fixed-attachment {
+    background-attachment: fixed;
+}
+
+@media (min-width:768px) {
+    .navbar-brand img {
+        width: 200px !important;
+    }
+}
+
+@media (max-width:768px) {
+    .navbar-brand img {
+        width: 200px !important;
+    }
+}
+
+nav a.nav-link {
+    color: #000 !important;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Slider Section */
+
+section.slider .btn-color {
+    border: thin solid #fff;
+    color: #fff;
+}
+
+section.slider .btn-color:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+section.slider h1 {
+    font-family: 'Fredoka One', cursive;
+}
+
+/* Course Lists section */
+.course-lists {
+    margin-bottom: 5rem !important;
+}
+
+.course-lists h3,
+.course-lists h5 {
+    font-family: 'Open Sans',
+        sans-serif;
+    text-align: center;
+}
+
+a.courses-all {
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 50%;
+}
+
+@media (min-width: 768px) {
+    a.courses-all {
+        width: 20%;
+    }
+}
+
+#courses {
+    margin: 0;
+}
+
+#courses .courses {
+    margin: 5px;
+}
+
+#courses .courses .content {
+    padding: 20px;
+
+}
+
+#courses .courses .content h6,
+#courses .courses .content h2 {
+    margin-bottom: 10px;
+    padding: 0;
+    color: #000;
+}
+
+#courses .courses .content span i {
+    color: #fb7b76;
+}
+
+#courses .courses .courses-pack {
+    margin-bottom: 10px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Section for Aquisition */
+section.aquisition {
+    background: #e4e4e4;
+    /* color: #fff; */
+}
+
+section.aquisition img {
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+section.aquisition .card-text span.aquisition-heading {
+    font-weight: bold;
+}
+
+@media (min-width:768px) {
+    section.aquisition .card-text img {
+        width: 50px !important;
+    }
+}
+
+@media (max-width:768px) {
+    section.aquisition .card-text img {
+        width: 50px !important;
+    }
+}
+
+section.aquisition .aquisitions {
+    margin-top: 5rem;
+    padding-bottom: 2rem;
+}
+
+section.aquisition .card-text img {
+    border: 2px solid #0088CC;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    padding: 15px;
+}
+
+section.aquisition .card-text img:hover {
+    background: #0088CC;
+}
+
+/* End of section for aquisition */
+
+/* Section for accomplishment */
+section.accomplishment {
+    color: #fff;
+}
+
+section.accomplishment h2 {
+    padding-top: 2rem;
+}
+
+section.accomplishment h2,
+section.accomplishment p {
+    text-align: center;
+}
+
+section.accomplishment .digits {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+section.accomplishment .digits .number {
+    font-weight: bold;
+    font-size: 45px;
+    color: #0088CC;
+}
+
+@media (min-width: 768px) {
+    section.accomplishment .digits {
+        margin: auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        width: 70%;
+        padding: 4rem;
+    }
+}
+
+/* End of section for accomplishment */
+
+/* Section For Certificate */
+section.certificate {
+    background: #e4e4e4;
+    /* color: #fff; */
+}
+
+section.certificate img {
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+section.certificate .card-text span.aquisition-heading {
+    font-weight: bold;
+}
+
+@media (min-width:768px) {
+    section.certificate img {
+        width: 500px !important;
+    }
+
+    section.certificate .card-text img {
+        width: 100px !important;
+    }
+}
+
+@media (max-width:768px) {
+    section.certificate img {
+        width: 500px !important;
+    }
+
+    section.certificate .card-text img {
+        width: 100px !important;
+    }
+}
+
+section.certificate .certificates {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+section.certificate .card-text img {
+    border: 2px solid #0088CC;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    padding: 15px;
+}
+
+section.certificate .card-text img:hover {
+    background: #0088CC;
+}
+
+/* End of section for certificate */
+
+/* Section for recomendations */
+section.recomendations h2 {
+    text-align: center;
+}
+
+section.recomendations p {
+    text-align: center;
+}
+
+section.recomendations .card-body .card-text {
+    text-align: justify;
+}
+
+/* End of section for recomendations */
+
+/* Section for footer */
+footer {
+    background: #303030;
+    color: rgb(197, 194, 194);
+    padding: 2rem 0px 2rem 0px;
+}
+
+footer h5 {
+    border-bottom: thin solid rgb(221, 221, 221);
+    padding-bottom: 10px;
+}
+
+footer a {
+    color: rgb(202, 202, 202);
+}
+
+footer a:hover {
+    color: rgb(187, 187, 187);
+    text-decoration: none;
+}
+
+.copyright {
+    background: rgb(78, 78, 78);
+    color: rgb(184, 183, 183);
+}

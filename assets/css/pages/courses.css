@@ -1,0 +1,166 @@
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.fill-screen {
+    background-position: center;
+    background-size: cover;
+}
+
+.fixed-attachment {
+    background-attachment: fixed;
+}
+
+@media (min-width:768px) {
+    .navbar-brand img {
+        width: 200px !important;
+    }
+}
+
+@media (max-width:768px) {
+    .navbar-brand img {
+        width: 200px !important;
+    }
+}
+
+nav a.nav-link {
+    color: #000 !important;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Section for business-management */
+section.business-management {
+    background: #fff;
+    margin-top: 6rem;
+}
+
+section.business-management .line {
+    border-bottom: thin solid rgb(155, 155, 155);
+    color: rgb(82, 82, 82);
+}
+
+section.business-management h6 {
+    margin-bottom: 2rem;
+    color: rgb(82, 82, 82);
+}
+
+section.business-management .card {
+    box-shadow: 3px 3px 5px 2px #ccc;
+}
+
+section.business-management .card a {
+    color: rgb(82, 82, 82);
+}
+
+section.business-management .card a:hover {
+    text-decoration: none;
+}
+
+section.business-management .card-text p {
+    font-size: 15px;
+    /* font-weight: bold; */
+}
+
+section.business-management .rating {
+    color: rgb(17, 102, 199);
+}
+
+section.business-management .rating h6 {
+    color: rgb(17, 102, 199);
+}
+
+section.business-management .card-text span.former {
+    font-size: 12px;
+    text-decoration: line-through;
+    font-weight: bold;
+    color: rgb(133, 133, 133);
+}
+
+section.business-management .card-text span.current {
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Section for project-management */
+section.project-management {
+    background: #fff;
+    margin-top: 2rem;
+}
+
+section.project-management .line {
+    border-bottom: thin solid rgb(155, 155, 155);
+    color: rgb(82, 82, 82);
+}
+
+section.project-management h6 {
+    margin-bottom: 2rem;
+    color: rgb(82, 82, 82);
+}
+
+section.project-management .card {
+    box-shadow: 3px 3px 5px 2px #ccc;
+}
+
+section.project-management .card a {
+    color: rgb(82, 82, 82);
+}
+
+section.project-management .card a:hover {
+    text-decoration: none;
+}
+
+section.project-management .card-text p {
+    font-size: 15px;
+    /* font-weight: bold; */
+}
+
+section.project-management .rating {
+    color: rgb(17, 102, 199);
+}
+
+section.project-management .rating h6 {
+    color: rgb(17, 102, 199);
+}
+
+section.project-management .card-text span.former {
+    font-size: 12px;
+    text-decoration: line-through;
+    font-weight: bold;
+    color: rgb(133, 133, 133);
+}
+
+section.project-management .card-text span.current {
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Section for footer */
+footer {
+    background: #303030;
+    color: rgb(197, 194, 194);
+    padding: 2rem 0px 2rem 0px;
+}
+
+footer h5 {
+    border-bottom: thin solid rgb(221, 221, 221);
+    padding-bottom: 10px;
+}
+
+footer a {
+    color: rgb(202, 202, 202);
+}
+
+footer a:hover {
+    color: rgb(187, 187, 187);
+    text-decoration: none;
+}
+
+.copyright {
+    background: rgb(78, 78, 78);
+    color: rgb(184, 183, 183);
+}
