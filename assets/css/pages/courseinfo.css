@@ -1,0 +1,340 @@
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.fill-screen {
+    background-position: center;
+    background-size: cover;
+}
+
+.fixed-attachment {
+    background-attachment: fixed;
+}
+
+@media (min-width:768px) {
+    .navbar-brand img {
+        width: 190px !important;
+    }
+}
+
+@media (max-width:768px) {
+    .navbar-brand img {
+        width: 190px !important;
+    }
+}
+
+@media (min-width:768px) {
+    nav a.shoping-cart img {
+        width: 35px !important;
+        margin-left: 2rem;
+    }
+}
+
+@media (max-width:768px) {
+    nav a.shoping-cart img {
+        width: 45px !important;
+        margin-top: 1rem;
+    }
+}
+
+nav a.nav-link {
+    color: #000 !important;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Section for Course Infomation */
+section.courseinfo .container {
+    margin-top: 9rem;
+    border-bottom: thin solid rgb(192, 192, 192);
+    margin-bottom: 2rem;
+}
+
+section.courseinfo h2,
+section.courseinfo h4 {
+    font-weight: 700;
+    font-family: 'Quicksand',
+        sans-serif;
+}
+
+section.courseinfo .card-body a {
+    font-weight: bold;
+    letter-spacing: .25rem;
+    padding-top: 1.2rem;
+}
+
+section.courseinfo .card-body span.former {
+    font-size: 16px;
+    text-decoration: line-through;
+    font-weight: bold;
+    color: rgb(133, 133, 133);
+}
+
+section.courseinfo .card-title span.current {
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section.courseinfo .cards {
+    border-bottom: thin solid #919191;
+    padding-bottom: 1rem;
+}
+
+section.courseinfo .card-text p {
+    font-weight: bold;
+    line-height: 2rem;
+    font-size: 17px;
+}
+
+section.courseinfo .card-text .pull-right span {
+    line-height: 2rem;
+    font-size: 17px;
+}
+
+section.courseinfo .details p {
+    font-family: 'Quicksand',
+        sans-serif;
+    font-weight: 500;
+}
+
+section.courseinfo .card-text p i {
+    color: rgb(24,
+            67,
+            185);
+}
+
+section.courseinfo .details p i {
+    color: rgb(24,
+            67,
+            185);
+}
+
+/* Section for Course Advantages*/
+section.advantages h5,
+section.advantages p {
+    text-align: center;
+    color: #000;
+}
+
+section.advantages h5 {
+    font-size: 22px;
+}
+
+section.advantages p {
+    font-size: 18px;
+    margin-left: 1rem;
+}
+
+@media (min-width:768px) {
+    section.advantages .course-img img {
+        width: 700px;
+    }
+}
+
+@media (max-width:768px) {
+    section.advantages .course-img img {
+        width: 350px;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (min-width:768px) {
+    section.advantages .details img {
+        width: 100px;
+    }
+}
+
+section.advantages .details {
+    margin-top: 2rem;
+}
+
+section.advantages .details img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+/* Section for Course Benefits*/
+section.benefits h5,
+section.benefits p {
+    text-align: center;
+    color: #000;
+}
+
+section.benefits h5 {
+    font-size: 22px;
+    margin-top: .7rem;
+}
+
+section.benefits p {
+    font-size: 18px;
+    margin-right: 1rem;
+}
+
+@media (min-width:768px) {
+    section.benefits .course-img img {
+        width: 700px;
+    }
+}
+
+@media (max-width:768px) {
+    section.benefits .course-img img {
+        width: 350px;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (min-width:768px) {
+    section.benefits .details img {
+        width: 100px;
+    }
+}
+
+section.benefits .details {
+    margin-top: 1rem;
+}
+
+section.benefits .details img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+section.benefits .container,
+section.cart-footer .container {
+    border-bottom: thin solid #919191;
+    padding-bottom: 1rem;
+}
+
+/* Section for cart-footer */
+section.cart-footer {
+    margin-top: 2rem;
+}
+
+section.cart-footer a {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+section.cart-footer h5 {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+section.cart-footer h6 {
+    text-align: center;
+}
+
+section.cart-footer h6 span.former {
+    text-decoration: line-through;
+    font-size: 18px;
+    color: rgb(161, 161, 161);
+    font-weight: bold;
+}
+
+section.cart-footer h6 span.current {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+section.cart-footer a.transparent {
+    background: none;
+    color: #007bff;
+}
+
+section.cart-footer a.transparent:hover {
+    background: #007bff;
+    color: #fff;
+}
+
+section.cart-footer a.btn-color {
+    background: #007bff;
+}
+
+/* Section for business-management */
+section.business-management {
+    background: #fff;
+    margin-top: 2rem;
+}
+
+section.business-management h3 {
+    text-align: center;
+    font-family: 'Quicksand',
+        sans-serif;
+    font-weight: bold;
+}
+
+section.business-management .card {
+    box-shadow: 3px 3px 5px 2px #ccc;
+}
+
+section.business-management .card a {
+    color: rgb(82, 82, 82);
+}
+
+section.business-management .card a:hover {
+    text-decoration: none;
+}
+
+section.business-management .card-text p {
+    font-size: 15px;
+    /* font-weight: bold; */
+}
+
+section.business-management .rating {
+    color: rgb(17, 102, 199);
+}
+
+section.business-management .rating h6 {
+    color: rgb(17, 102, 199);
+}
+
+section.business-management .card-text span.former {
+    font-size: 12px;
+    text-decoration: line-through;
+    font-weight: bold;
+    color: rgb(133, 133, 133);
+}
+
+section.business-management .card-text span.current {
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Section for footer */
+footer {
+    background: #303030;
+    color: rgb(197, 194, 194);
+    padding: 2rem 0px 2rem 0px;
+}
+
+footer h5 {
+    border-bottom: thin solid rgb(221, 221, 221);
+    padding-bottom: 10px;
+}
+
+footer a {
+    color: rgb(202, 202, 202);
+}
+
+footer a:hover {
+    color: rgb(187, 187, 187);
+    text-decoration: none;
+}
+
+.copyright {
+    background: rgb(78, 78, 78);
+    color: rgb(184, 183, 183);
+}

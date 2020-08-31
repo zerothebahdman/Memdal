@@ -26,6 +26,20 @@ body {
     }
 }
 
+@media (min-width:768px) {
+    nav a.shoping-cart img {
+        width: 35px !important;
+        margin-left: 2rem;
+    }
+}
+
+@media (max-width:768px) {
+    nav a.shoping-cart img {
+        width: 45px !important;
+        margin-top: 1rem;
+    }
+}
+
 nav a.nav-link {
     color: #000 !important;
     font-family: 'Open Sans', sans-serif;

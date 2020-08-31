@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Memdal IT Services</title>
+    <script src="https://kit.fontawesome.com/f2e77429f4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Quicksand:wght@500;600;700&display=swap"
+        rel="stylesheet" />
+    <!-- END OF FONTS -->
+    <link rel="stylesheet" href="../assets/css/pages/courseinfo.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
+        <div class="container-fluid">
+            <div class="col-md-6 col-sm-5">
+                <a class="navbar-brand" href="#"><img src="../assets/img/memdal logo.png" alt="" /></a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse col-md-6 col-sm-7" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" href="../index.html">Home </a>
+                    <div class="dropdown">
+                        <a class="nav-link pr-4 dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            Courses
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="./courses.html">Online Courses</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Project Based Courses</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a class="nav-link pr-4 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false" href="#">
+                            Institute
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="./about.html">About Us</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Research</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Verification</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">LAC</a>
+                        </div>
+                    </div>
+
+                    <a class="nav-link pr-4" href="#">Help</a>
+                    <a class="nav-link btn btn-primary btn-sm" href="#">Login / Register</a>
+                    <a href="#" class="shoping-cart">
+                        <img
+                            src="data:image/png;base64,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" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="courseinfo">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-3">
+                        <img src="../assets/img/Business-Financing.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <div class="cards d-flex bd-highlight">
+                                <h5 class="card-title flex-fill bd-highlight">
+                                    <span class="former">
+                                        &#36;300.00
+                                    </span>
+                                    <br />
+                                    <span class="current flex-fill bd-highlight"> &#36;18.99</span>
+                                </h5>
+                                <a href="#" class="flex-fill bd-highlight pull-right btn btn-sm btn-primary"><i
+                                        class="fas fa-cart-plus"></i> ADD TO CART</a>
+                            </div>
+                            <div class="card-text d-flex bd-highlight">
+                                <p class="flex-fill bd-highlight mb-2">
+                                    <i class="fas fa-laptop"></i> Type: <br />
+                                    <i class="fas fa-stopwatch"></i> Duration: <br />
+                                    <i class="fas fa-star"></i> Award: <br />
+                                    <i class="fas fa-globe-europe"></i> Language: <br />
+                                    <i class="fas fa-chart-bar"></i> Level: <br />
+                                    <i class="fas fa-users"></i> Access:
+                                </p>
+                                <div class="flex-fill bd-highlight pull-right pb-2">
+                                    <span> Online Course </span> <br />
+                                    <span> 3hrs (self-paced) </span> <br />
+                                    <span> Certificate </span> <br />
+                                    <span> English </span> <br />
+                                    <span> Beginner </span> <br />
+                                    <span> Lifetime Access </span> <br />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 details">
+                    <h2>Business Financing</h2>
+                    <p class="mb-4">
+                        An introduction to the most essential business skills and the art
+                        of effective and efficient <br />
+                        management.
+                    </p>
+                    <h4>Skills you will learn</h4>
+                    <p>
+                        <i class="fas fa-check"></i> Basics of leadership & team
+                        development. <br />
+                        <i class="fas fa-check"></i> Strategic decision making &
+                        negotiation skills. <br />
+                        <i class="fas fa-check"></i> Essentials of project, crisis and
+                        time management. <br />
+                    </p>
+                    <h4>About This Course</h4>
+                    <p class="mb-5">
+                        In today’s business world, management and leadership skills are
+                        essential for long-term success. This course teaches you how to
+                        manage organisations and empower people. You will learn various
+                        leadership models, discover different leadership styles and
+                        understand how teams develop.
+                        <br />
+
+                        You will also learn the basics of project management, change
+                        management and time management. Furthermore, this course will
+                        teach you how to handle crises, how to make better decisions and
+                        how to become a superior, more effective negotiator. <br /><br />
+
+                        You will also receive short case studies of Apple, Microsoft and
+                        the University of Oxford that summarize the key takeaways of this
+                        course.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="advantages">
+        <div class="container">
+            <div class="row">
+                <div class="text col-md-5">
+                    <div class="col-md-12 details">
+                        <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAABmJLR0QA/wD/AP+gvaeTAAAEZklEQVR4nO2dzY8URRiHnxHIRFyFxMhX0Jh4EMWLoEZvK5rlYCAoMUaj8aQYjfHuQRM/+AeEg/EEiVm5eBFMAEU9kBijcCSQIKseUHEJCFlwiauH6klX9870bk1/vT39e5JKuqq6q955f9P10dNVA0IIIYQQong6Oa69B3gB2ASMFWNO47kK/ARMAmerqvQm4ENgFvhPoW+YBd6PfFU6eyv+cE0OH4U6N7TJmgAOe/FTwGfA76EVjyhrgOeBDV7ak8DXZVV4iFj9b4FuWRU1mC7wHbGfDpZZ2VWvovEyK2o4jxP76UrIhSFN1q3A3158NfBndLwCeBm4OaTyEWIG2A9cjuKrgD+8/NsIFGYxrCTZYa308iYpp1NsUvh0kb7KpKhh2YaFTxl57i+ikKVFFJLiCDBVQrkWuRs38qyFrNvwpJe+o3rTamMH8ec+6aXX3mSJgpAgxpAgxpAgxpAgxpAgxpAgxpAgxpAgxpAgxpAgxpAgxpAgxpAgxpAgxpAgxpAgxpAgxpAgxpAgxpAgxpAgxpAgxpAgxpAgxpAgxpAgxpAgxpAgxpAgxpAgxpAgxpAgxpAgxihjjeEzwL0llGuRjUUXWIYgL5VQZmsoqsnSXidwvohCQu6QuVTcF/NN4G3au2/WFWC3F09/0dO+K4xp4qW+D5VVyQjwCLGf/gq5MLTJOu4dvxV4bZvwfXN84Fl9WKjJugu4w4sfA7ZFxy/imqh9wG8hlY4wd+I24fE3TzgGbPbiF4Bfhyn8dVzbV/emLqMW5oDXBjk9q8naRr5NMkV/OsD2QZlZTdaFVPwSTmERTofkfidp3y6KN0jeak/nt6u17CTpy4FNVhZrgWteIVPAumLsaxXrcL7r+XEGtxvfUOwmqexZ3J3S1glgCGO453o/k/ThB1kXLdRpL8NtSDaeSp8j3l9Q9GcF8wdN3wBbgRt5Cr4FOED9w8Wmh0lgeaDvM5kAvgSuG/hwTQnXI58tehvAYeYZXVyHf/sQ1+ZlM/BxdHye+KlBmi9wNgLswm2QXzXTOBv/qaHuyhgn/vadyzjvnHfeeOlWFYh+wjVG0wTxRydZQ28/b7YkWwSwnmSneV+fczamztFktmT8PYK/JznrXRWl9fLr6Mxbx3aSd8BF4PMoXEzlPVWTja3jPRaeA7xbm3Ut5TngF+YLMQU8W59Z7WYJ7n87emLsj9IaS9OGvWn+xc2Ie0xHaY2l6YKMHBLEGBLEGBLEGBLEGBLEGE0XZCnu7057rKHh85Am8wBwhvkz9dNRnqiYEwx+jtXYp7xFLGmbAB4soJwQul6dN3CPTDq45XTLgE3AO1T/e/YJ4GjFdSZ4jPrfkN/j2bOnZlvmgEeH9CWQv1Mfo/435Ge842u1WeHokPOtzrxN1lHgFeDhnOWE0sUtjAH34vIlnDN2eefso/om6wfgq4rrNEO/EZY/0hIV8wTu/93TYlwGttRoVy7qbv/zshZ4lXgN34/AJxS0ZlwIIYQQQowK/wPoEuH5ga041wAAAABJRU5ErkJggg==" />
+                        <h5>100% Online</h5>
+                        <p>Click through engaging and Award Winning course content.</p>
+                    </div>
+                    <div class="col-md-12 details">
+                        <img alt="svgImg"
+                            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIKdmlld0JveD0iMCAwIDEyOCAxMjgiCnN0eWxlPSIgZmlsbDojMDAwMDAwOyI+ICAgIDxwYXRoIGQ9Ik0gNjQgMTMuNSBDIDM2LjIgMTMuNSAxMy41IDM2LjIgMTMuNSA2NCBDIDEzLjUgOTEuOCAzNi4yIDExNC41IDY0IDExNC41IEMgOTEuOCAxMTQuNSAxMTQuNSA5MS44IDExNC41IDY0IEMgMTE0LjUgMzYuMiA5MS44IDEzLjUgNjQgMTMuNSB6IE0gNjQgMTkuNSBDIDg4LjUgMTkuNSAxMDguNSAzOS41IDEwOC41IDY0IEMgMTA4LjUgODguNSA4OC41IDEwOC41IDY0IDEwOC41IEMgMzkuNSAxMDguNSAxOS41IDg4LjUgMTkuNSA2NCBDIDE5LjUgMzkuNSAzOS41IDE5LjUgNjQgMTkuNSB6IE0gNjQgMzEgQyA2Mi4zIDMxIDYxIDMyLjMgNjEgMzQgTCA2MSA1OC44MDA3ODEgQyA1OS4yIDU5LjgwMDc4MSA1OCA2MS44IDU4IDY0IEMgNTggNjcuMyA2MC43IDcwIDY0IDcwIEMgNjYuMiA3MCA2OC4xOTkyMTkgNjguOCA2OS4xOTkyMTkgNjcgTCA4NCA2NyBDIDg1LjcgNjcgODcgNjUuNyA4NyA2NCBDIDg3IDYyLjMgODUuNyA2MSA4NCA2MSBMIDY5LjE5OTIxOSA2MSBDIDY4LjY5OTIxOSA2MC4xIDY3LjkgNTkuMzAwNzgxIDY3IDU4LjgwMDc4MSBMIDY3IDM0IEMgNjcgMzIuMyA2NS43IDMxIDY0IDMxIHoiPjwvcGF0aD48L3N2Zz4=" />
+                        <h5>100% self-paced</h5>
+                        <p>Immediate start: study when, where, and how fast you want.</p>
+                    </div>
+                </div>
+                <div class="col-md-7 course-img">
+                    <img src="../assets/img/lesson-course.png" alt="" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="benefits">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 course-img">
+                    <img src="../assets/img/online-course-with-certificate.png" alt="" />
+                </div>
+                <div class="text col-md-5">
+                    <div class="col-md-12 details">
+                        <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAABmJLR0QA/wD/AP+gvaeTAAAIxElEQVR4nO2daYwcxRWAv9ldw653fQIx4BBsBDZXHHFjx8Tch7G5TzlBJEiWuAQkBiTID+eSrORHQggRh8RhQOIQlzDiErcNAsRhjiQEcrHY3GaN18bGXk9+vGlt1zHt7unqrp7p+aTW7nR3vX71qru6XtWramjTpk1rMxdYCawA5njWpfRsDXwGVGvbZ7V9bTxxJsOFEWxneNWo5DyBWSCPe9WoxOwEbMIskCFgZ496paLDtwIpOA/otOzvAM7NV5U2HcB/MZ+OYPsQe2G1yYhjUAtgsLaF9x3jTbsUNGuVdZ72+x7gXm3fz3LSpfRsA6xHfRp+CMzU9m0AtvOkY6m4DNXw7wGV2rG/accu9aFg2ViOavTLQ8eu0I69nbt2JeNgVINvBLYPHZ8AfKudc1DOOpaKm1CNfb/lnAe0c27MTbuS0QusRjX28Zbz5mjnrAH6ctKxVPwU1dAfYXf+OhHHMHzuufmoWC6Wohr5txHn/k4794XMtSsZU4HNDBt4M7BrxPmTtfOrwB4Z61gq/oBq3KdjpHlGS/P7zLQrGV3Ax6jGnRcj3Y+1NJ8AIzLSsVScgmrYAWBkjHTdwCot7ckZ6VgqHkE16l8SpL1OS7vEuXYlYyLmqOA+CdLvq6XdhIw0tmmQX6IadHkDMl7XZFztTLuSUQE+QDXmBQ3IuVCT8W+adxzIK4ejGvIbYFwDcsYAazVZhznSsVTciWrE21PIukOTdUdq7UrGWGAdqhEPTSHvMNw8baXlIsx6vxKZIpoK8L4m88KUOpYKvWV0lQOZV2syG2mxlZL9yMZ3sPk0+zqQ2/L8FdVoDzuUvUSTfZ1D2S1JD2b/00kO5Z+syY7bL5YbaV6UOqOQodJepO0/uva7r3ZsbO1YsG9c6P/e2vGxwPiQzE+R6mqjIx1HAP1IMETAKqRgBhB/JYiC/Cr0/9ra8TWhfV8jQ8pBmjUuFOyq/f0u8D3EODZjjgn9DowZNu5YF8pYWIy7wqAmazFq6NB41JsgDQOohRgu1EGkAG2FOogMO38EEss0hPooF2EbQkYKXTO1wPldAGYkRxG21cDPGzB2XBYUNN8DFeBdYE8HmQwe00Hi1bfhx3tQ+73OgT5xGIla7fZpv+O8F4PjLkKN3qkA30cGgWxt/VeB+xCDBsYM13vhF2AbtaGiv497a/+fChxgSdsPzA5+bIsZFFBFIjcW4rY1VmYuwf7+WoYaEgtIi+tay8lV4C4K1l5vMrqB27Db9iZgq6jE8zEDlqvAGzTxZEqPTARewbTnJuDKuEIOQZwyXcjnwCy3+rY00zFDmKrAl8CRSYXtgsyv0IWtx5xS1sZkHuaYThX4Byn8qz4k5N9W991AO/DMRiewCLvNHkFaXqmoIHWdrXXwHO15fGHGA09ib60uwnFwxemYU4+rSGTIXi4v1KRMAf6OaZ9vkLDWTJgG/Mdy0TW47SZvNo5Dehp0u/QD+2d98W2R6PN6j2WZnMio6nwpajd/pnQBf7YoUQXuphxOZDfSlW+zwY1swdnLinpO5Ju0thNZz9nbSAJnLyuinMhD/amVGTOo7+wd4VEvhZ2A1zCV3EBrOZHzkFaTns+3EEe6UPQhXfWt6ERGOXtLcODsZUUrOpG5OntZcRr1nci9PeqVlClI35PN2Yszz7FQTENicm1OZDPM9ZtNfWdvP496pWI7pKrSMzVEAZqHEbRataswArge+wtxhke96qEvhBZs19PcDROD8xHHKZzJs7xqZOdsTGfvfK8aZcRIzKX5JvlUqA47Y/pSvV41yohjUTP6T7/qRKJP7slthdM829B6t8JTOV47KbpuuXWJtAvEjrcCyYttUJuRQ8i4SlGx6ZtLczevJ+RI7VqvA1/kdO1G+BKJQwvoIKe57XkVSDNVVwEtXW39C7XVcpRfdWJxNGY/XEswCbNjrsenQjHpxhz7mJz1RfOoso7Wfi9DMlp01gMvavsSh38mJY8Cacb3R0DLvUcqqF9RqwIHetUoGQeh6v4FTTIgVY99UDO0CvdfvpmODKMuqf3vkk7MefNJVrQrHJejZuY+h7JHIkOo4eUyNiPj96McXkcPNl/gUHbuPIaamUZWhLNxHNHfoFqBu1FJfUW6Rx3JzZ2tMMfVp6SUOQ55AuoVhL7dA3wn5TWnajLX0qRfE52FmpEPU8r7CRJ8ZzP8B5jrMwbb57W0adAX95+VUp4XfoOaiZsblDMJs+oLj+Zdg8SE9SAzhm2hrVXgWWC3BnW4RZP16wbleOUl1EwkDZvpQGKHv8Zu4OXY53v/AJlfb0uzFglgSNrS05ct1x3GwjMadfx8M7BDgvR7YxZouOtlIdHR5V3InHBbbFgV6W1OsnjZBNSvLWykwNGKNk5ENUDcj3ONQO5gfew92J4Hdk+gxy7Yow4Doy5C+qzi8I6W/oQEenhHnzvyxxhpZiDrrtiMN4Dc8Y14yRXgHMTLtsl+n3hjHX/S0l3TgC7e0L8nOCfi3F7kTq23ZNLDyHpeadme+hNsAodydET6uVqadx3olAs7YlYN9TI6G/gfdiN9jMQIu2YOZjM22FYin8ewMQqzBefiRsmcc1CVXmo5ZwLRd+ti3K3yZmMMUuVEPZUTLemWaeel9W9yQV9kZaF2/HSiHbw8u7hnYp/KXEWWnJqPOon1V9o5t+aoa8P0oyp9SG3/ZOBx7JkPHDwfEYLdyE2zoY5uzzHc5fMj7diKnHVNzJ6oCg8iGZ6PTEOwZfhNcpjLHYNpwMvYdVyHNMd7MPNR6K+/XYyq7HtEe82/wP34SBo6EZ30z1sE26tInsL7LvaiaUwewp6RqGqgiERVr/r2oCcdt0gX9hlHW3pRFpmoBkiwrWZ4/eNCMZ1oxes1JYtOVBM92A72pl0EV2FXth/xcpuduZgtyGBz8TkN5+ifRx1Cvj4Q1R3RbIxG8qQ7lIX8rOtuSNdDFennmelXnUyZyXBH6EqiP5TslR6kXd7UsUsx6UDy2gxhsW3atAj/B9w736HVC8tdAAAAAElFTkSuQmCC" />
+                        <h5>Learn a new Skill</h5>
+                        <p>
+                            With compact learning sessions, you will learn a new skill
+                            faster than ever.
+                        </p>
+                    </div>
+                    <div class="col-md-12 details">
+                        <img
+                            src="data:image/png;base64,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" />
+                        <h5>Get your certificate</h5>
+                        <p>
+                            Download your personal certificate upon completion of this
+                            course.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cart-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="col-md-12">
+                        <a href="./courses.html" class="btn btn-primary transparent btn-lg"><i
+                                class="fas fa-chevron-left"></i> VIEW ALL COURSES</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="col-md-12">
+                        <h5>Save 85% on this course now:</h5>
+                    </div>
+                    <div class="col-md-12">
+                        <h6>
+                            <span class="former"> &#36;300.00</span>
+                            <span class="current">&#36;18.99</span>
+                        </h6>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="col-md-12 mb-5">
+                        <a href="#" class="btn btn-primary btn-lg"><i class="fas fa-cart-plus"></i> ADD TO CART</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="business-management">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-3">
+                <div class="col-md-12">
+                    <h3 class="mb-5">Students also bought</h3>
+                </div>
+                <div class="col mb-4">
+                    <div class="card">
+                        <img src="../assets/img/strategic-management-and-operations.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="">
+                                <h5 class="card-title">Strategy & Operations</h5>
+                            </a>
+                            <span class="rating d-flex bd-highlight">
+                                <h6 class="mr-2 bd-highlight">4.5</h6>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </span>
+                            <div class="card-text d-flex bd-highlight">
+                                <p class="flex-fill bd-highlight"><i class="fas fa-check-square"></i> Course +
+                                    Certificate <br>
+                                    <i class="fas fa-stopwatch"></i> 4hrs / self-paced</p>
+                                <div class="flex-fill bd-highlight pull-right">
+                                    <span class="former ">
+                                        &#36;300.00
+                                    </span>
+                                    <br>
+                                    <span class="current flex-fill bd-highlight"> &#36;14.99</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card">
+                        <img src="../assets/img/strategicmanagement.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="#">
+                                <h5 class="card-title">Strategic Management</h5>
+                            </a>
+                            <span class="rating d-flex bd-highlight">
+                                <h6 class="mr-2 bd-highlight">4.9</h6>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </span>
+                            <div class="card-text d-flex bd-highlight">
+                                <p class="flex-fill bd-highlight"><i class="fas fa-check-square"></i> Course +
+                                    Certificate <br>
+                                    <i class="fas fa-stopwatch"></i> 4hrs / self-paced</p>
+                                <div class="flex-fill bd-highlight pull-right">
+                                    <span class="former ">
+                                        &#36;300.00
+                                    </span>
+                                    <br>
+                                    <span class="current flex-fill bd-highlight"> &#36;18.99</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card">
+                        <img src="../assets/img/managementskills.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="">
+                                <h5 class="card-title">Management Skills</h5>
+                            </a>
+                            <span class="rating d-flex bd-highlight">
+                                <h6 class="mr-2 bd-highlight">4.9</h6>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </span>
+                            <div class="card-text d-flex bd-highlight">
+                                <p class="flex-fill bd-highlight"><i class="fas fa-check-square"></i> Course +
+                                    Certificate <br>
+                                    <i class="fas fa-stopwatch"></i> 4hrs / self-paced</p>
+                                <div class="flex-fill bd-highlight pull-right">
+                                    <span class="former ">
+                                        &#36;300.00
+                                    </span>
+                                    <br>
+                                    <span class="current flex-fill bd-highlight"> &#36;18.99</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="foot">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="col-md-12">
+                        <h5>About</h5>
+                    </div>
+                    <div class="col-md-12">
+                        Mendal offers certified online courses and programs in the fields
+                        of IT, Networking, Marketing, and economics.
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="col-md-12">
+                        <h5>Institute</h5>
+                    </div>
+                    <div class="col-md-12">
+                        <a href="../index.html">Home</a><br />
+                        <a href="./aboutus.html">About</a><br />
+                        <a href="./courses.html">Courses</a><br />
+                        <a href="">Jobs</a><br />
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="col-md-12">
+                        <h5>Account</h5>
+                    </div>
+                    <div class="col-md-12">
+                        <a href="">Register</a><br />
+                        <a href="">Login</a><br />
+                        <a href="">My Account</a><br />
+                        <a href="">Help</a><br />
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="col-md-12">
+                        <h5>Community</h5>
+                    </div>
+                    <div class="col-md-12">
+                        <a href=""><i class="fab fa-facebook"></i> Facebook</a><br />
+                        <a href=""><i class="fab fa-youtube"></i> Youtube</a><br />
+                        <a href=""><i class="fab fa-linkedin"></i> LinkdIn</a><br />
+                        <a href=""><i class="fas fa-envelope"></i> Contact</a><br />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="copyright pt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h6>
+                        Copyright 2020 © Memdal IT Services - Abuja, Nigeria. The name and
+                        emblem are registered trademarks and protected by the Nigerian
+                        Patent and Trademark Office (CAC).
+                    </h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
